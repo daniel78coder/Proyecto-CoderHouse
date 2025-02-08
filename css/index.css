@@ -1,0 +1,471 @@
+/* Reseteo de márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bruno-ace-sc-regular {
+  font-family: "Bruno Ace SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Body */
+body {
+  background: #ffffff;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-size: 16px; /* Base para móviles */
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  color: #030303; /* Contraste para fondos oscuros */
+  text-shadow: 1px 1px 3px #333;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+.menu-tipo-letra {
+  font-family: "Bruno Ace SC", serif;
+}
+/* --------------------------------------------------------- */
+/* Navbar */
+.custom-navbar {
+  background-color: black; /* Cambia el fondo a negro */
+}
+
+.navbar-nav .nav-link {
+  color: rgb(255, 255, 255) !important; /* Cambia el color del texto a blanco */
+  margin-right: 30px; /* Reduce el espacio entre los elementos */
+  font-family: "Bruno Ace SC", serif;
+  font-size: 15px; /* Tamaño de fuente */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #efdc07 !important; /* Efecto hover con amarillo oro */
+}
+
+.dropdown-menu {
+  background-color: black; /* Fondo negro para el menú desplegable */
+  border: none;
+}
+
+.dropdown-menu .dropdown-item {
+  color: white; /* Texto blanco para los ítems */
+  
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #444444; /* Fondo gris oscuro al pasar el mouse */
+}
+
+/* IMAGEN FONDO PRINCIPAL */
+
+.main-bg {
+  background-image: url("/img/imgen\ principal.jpg"); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100vh; /* Ajusta la altura para cubrir toda la pantalla */
+  display: flex; /* Habilita flexbox para centrar el contenido */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo para los títulos */
+.titulo-principal-1 {
+  color: #e1dc48; /* Texto en blanco */
+  font-size: 4rem; /* Tamaño del texto del título principal */
+  text-shadow: 2px 2px 5px rgba(83, 239, 21, 0.7); /* Agrega sombra al texto */
+  margin-top: -350px; /* Ajusta este valor según lo que necesites */
+}
+
+.content-center h2 {
+  color: white; /* Texto en blanco */
+  font-size: 1.5rem; /* Tamaño del subtítulo */
+  text-shadow: 1px 1px 3px rgba(83, 239, 21, 0.7); /* Sombra para el subtítulo */
+  text-align: center;
+  margin-top: -20px;
+}
+
+/* -------------------------------------------------- */
+/* Galería de imágenes */
+.image-gallery {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+.gallery-grid img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 20px 8px rgba(13, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  border: 0.3rem solid #000000;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilo de la sección de videos */
+.video-section {
+  padding: 30px 20px;
+  background-color: #ffffff;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.section-description {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Contenedor de videos */
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Caja de video */
+.video-box {
+  display: flex;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 3px solid #000000;
+}
+
+.video-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Video */
+video {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Información del video */
+.video-info {
+  padding: 10px;
+  text-align: left;
+}
+
+.video-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.video-info p {
+  font-size: 0.9rem;
+  color: #555;
+}
+/* texto y descripcion del video*/
+.texto {
+  display: flex;
+  flex-direction: column; /* Coloca el contenido en columna */
+}
+
+.texto h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+/* ---------------------------------------------- */
+/* SECCION SERVICIOS */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.card img:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+}
+
+.btn-custom {
+  margin-top: 10px;
+  padding: 15px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: transparent;
+  color: rgb(241, 241, 237);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: transparent;
+  color: #e5f505;
+  border: #9c9a9a 1px solid;
+}
+.servicios h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+/* ---------------------------------------------------- */
+/* ESTILOS PARA LA SECCION QUIENES SOMOS */
+
+/* Estilos para el logo */
+.logo img {
+  width: 120px;
+}
+
+/* Estilos personalizados para la sección de "Quiénes Somos" */
+.quienes-somos {
+  background-color: #f8f9fa; /* Fondo claro */
+}
+
+.quienes-somos h1 {
+  font-family: "Bruno Ace SC", serif;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 3px #333;
+  color: #030303;
+}
+
+.quienes-somos p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.quienes-somos img {
+  border: 2px solid #ddd; /* Borde claro */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0a0a23;
+}
+
+/* Sección de ubicación */
+.location-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.map {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details h2 {
+  margin-top: 0;
+  color: #0a0a23;
+}
+
+.details p {
+  line-height: 1.6;
+}
+
+.location-img {
+  width: 25%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* ------------------------------------------------------------------ */
+/* FORMULARIO DE LOGIN */
+
+.car {
+  color: #ffcc63;
+}
+.bg-dark {
+  background-color: var(--light) !important;
+}
+.form-control,
+.btn {
+  min-height: 3.125rem;
+  line-height: initial;
+}
+.img-1 {
+  background-image: url("../img/imagen-registro2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh; /* Ajusta la altura para cubrir toda la pantalla */
+  display: flex; /* Habilita flexbox para centrar el contenido */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center;
+}
+
+/* -------------------------------------------------------- */
+/* FOOTER  */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+/* ---------------------------------------------
+MEDIA QUERIES  */
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .logo img {
+    width: 100px; /* Ajuste del tamaño del logo */
+  }
+
+  .quienes-somos h1 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #333;
+  }
+
+  .quienes-somos p {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .location-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .location-img {
+    width: 50%; /* Ajuste del tamaño de la imagen de ubicación */
+  }
+
+  .car {
+    color: #ffcc63;
+  }
+
+  .bg-dark {
+    background-color: var(--light) !important;
+  }
+
+  .form-control,
+  .btn {
+    min-height: 2.5rem; /* Ajuste de altura para pantallas pequeñas */
+    line-height: initial;/* Ajuste de altura para pantallas pequeñas */
+  }
+
+  .img-1 {
+    background-size: cover; /* Ajuste para mejorar el diseño en pantallas pequeñas */
+    height: 50vh; /* Reducir la altura en dispositivos más pequeños */
+  }
+
+  .main-bg {
+    background-size: cover;
+    background-position: center;
+    height: 70vh;/* Reducir la altura en dispositivos más pequeños */
+  }
+
+  .titulo-principal-1 {
+    font-size: 2.5rem;
+    margin-top: -150px;
+  }
+
+  .content-center h2 {
+    font-size: 1.2rem;
+    margin-top: -10px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .video-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+  }
+
+  .video-box {
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 5px; /* Ajuste del padding en el footer */
+  }
+}
+
