@@ -1,8 +1,20 @@
+<!-- Archivo base.html: Plantilla para las demás páginas -->
 <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Conoce a GoldenCAR, la empresa apasionada por los autos deportivos y alto rendimiento. Dedicados al mantenimiento, repuestos y atención al cliente de calidad."
+    />
+    <meta
+      name="keywords"
+      content="autos deportivos, repuestos, mantenimiento, atención al cliente, San Francisco"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,17 +27,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="../css/index.css" />
-    <title>GoldenCAR</title>
+    <title>Quiénes Somos - GoldenCAR</title>
   </head>
-  <body>
+
+  <body class="nosotros-body">
     <!-- Menú de navegación -->
     <header>
       <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="../img/logo3.png" alt="Logo" width="100" />
+            <img src="../img/logo3.png" alt="Logo de GoldenCAR" width="100" />
           </a>
           <button
             class="navbar-toggler"
@@ -63,9 +75,8 @@
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  >Servicios</a
                 >
-                  Servicios
-                </a>
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="repuestos.html">Servicios</a>
@@ -105,7 +116,7 @@
           <div class="col-lg-6 mb-4 mb-lg-0">
             <img
               src="../img/atencion-cliente.jpeg"
-              alt="Auto deportivo"
+              alt="Auto deportivo en acción"
               class="img-fluid rounded shadow"
             />
           </div>
@@ -152,8 +163,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
+            ></iframe>
           </div>
 
           <!-- Descripción de la ubicación -->
@@ -166,7 +176,7 @@
             </p>
             <img
               src="../img/logo3.png"
-              alt="Imagen representativa"
+              alt="Logo de GoldenCAR"
               class="location-img"
             />
           </div>
