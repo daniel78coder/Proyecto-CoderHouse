@@ -411,16 +411,27 @@ body.nosotros-body {
   justify-content: center; /* Centra el contenido horizontalmente */
 }
 
-/* Estilo para botones personalizados */
-.btn-custom {
-  background-color: #0a0a23; /* Fondo del botón */
-  color: white; /* Color del texto del botón */
+/* -------------------------------------------------------- */
+/* REDES SOCIALES */
+
+.social-icons {
+  margin-top: 10px;
 }
 
-.btn-custom:hover {
-  background-color: #333; /* Cambia de color al pasar el mouse */
+.social-icons a {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 30px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
-/* -------------------------------------------------------- */
+
+.social-icons a:hover {
+  color: #08df33; /* Cambia de color al pasar el mouse */
+}
+
+/*-----------------------------------------------------------*/
 /* FOOTER  */
 footer {
   background-color: #000;
